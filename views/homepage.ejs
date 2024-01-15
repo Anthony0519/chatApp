@@ -23,7 +23,7 @@ if(userName.length<1 || userName==null){
     const userName=prompt("what is your name")  
 }else{
 document.querySelector("h1").innerHTML=`Hello ${userName} welcome to my chat application`}
-const socket=io("http://localhost:6543")
+const socket=io("https://joshzone.onrender.com/")
 socket.on("message",(data)=>{
    
 document.querySelector("h2").innerHTML=data
