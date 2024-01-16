@@ -1,7 +1,7 @@
 const express=require('express')
-const http=require('http');
+const http=require('http')
 const socket=require("socket.io")
-const port=6543
+const port= 1624
 const app = express()
 const server=http.createServer(app)
 const io=socket(server)
@@ -27,5 +27,5 @@ io.on("connection",(socket)=>{
 
 server.listen(port,()=>{
 
-console.log("listening on port"+port)
+console.log(`server on port:${port}`)
 })
